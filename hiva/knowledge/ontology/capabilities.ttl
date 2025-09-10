@@ -1,0 +1,7 @@
+@prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Capability a rdfs:Class .
+ex:Math a rdfs:Class ; rdfs:subClassOf ex:Capability .
+ex:Calc a rdfs:Class ; rdfs:subClassOf ex:Math .
+ex:Format a rdfs:Class ; rdfs:subClassOf ex:Capability .

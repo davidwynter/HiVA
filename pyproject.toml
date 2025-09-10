@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "hiva"
+version = "0.1.0"
+description = "HiVA: Self-organized Hierarchical Variable Agent via Goal-driven Semantic-Topological Evolution (Python implementation)"
+authors = ["David Wynter <daed@yambina.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "hiva" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+networkx = "^3.2"
+pydantic = "^2.8"
+dataclasses-json = "^0.6"
+# For RDF/knowledge graph extension if needed later:
+rdflib = "^7.0"
+
+# Optional experiment logging
+mlflow = { version = "^2.14", optional = true }
+wandb = { version = "^0.17", optional = true }
+pyoxigraph = "^0.4.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+black = "^24.8"
+isort = "^5.13"
+mypy = "^1.11"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.extras]
+logging = ["mlflow", "wandb"]

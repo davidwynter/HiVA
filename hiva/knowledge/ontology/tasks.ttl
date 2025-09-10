@@ -1,0 +1,6 @@
+@prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Task a rdfs:Class .
+
+# Example task types could be defined if desired; not required for overlap.

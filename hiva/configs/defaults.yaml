@@ -1,0 +1,13 @@
+seed: 42
+max_successors: 2
+temperature: 1.0
+bandit_lambda: 0.5
+synergy_eta: 0.5
+knowledge_delta: 0.2
+decay_kappa: 0.05
+evolution_cooldown: 2
+
+# Ablation and Oxigraph endpoints
+distance_mode: tag   # or "kg"
+oxi_query_endpoint: null
+oxi_update_endpoint: null
